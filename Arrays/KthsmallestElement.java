@@ -29,12 +29,5 @@ public class KthsmallestElement {
             }
          }
          System.out.println(res.get(3-1));
-
-
-
-
-        
-        
-        
     }
 }
