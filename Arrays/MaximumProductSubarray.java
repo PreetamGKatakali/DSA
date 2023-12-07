@@ -1,3 +1,7 @@
+/**
+ * this is the finding the maxproductsum 
+ * in the given array 
+ */
 public class MaximumProductSubarray {
     static int maxProductSubarray(int[] arr,int n){
         int result=arr[0];

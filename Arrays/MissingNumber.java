@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.List;
 /**
  * finding the missing number 
+ * i.e--> n*(n+1)/2
  * here we have to take it from the zero beucase the formaul is on the whole number 
  * 
  * if in the array there is no whole number the we have to make the n=list.size+1;

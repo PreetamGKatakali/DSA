@@ -1,5 +1,5 @@
 /**
- * finding the subarray of the given sum number in the tange of the index 
+ * finding the subarray of the given number and printing the subarray of the i and j 
  */
 public class FindSubarray {
     static void find(int[] arr,int sum){

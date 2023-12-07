@@ -3,7 +3,8 @@ import java.util.Arrays;
 import java.util.List;
 /**
  * finding the kth smallest or the biggest ion the array 
- * and we should also find the worest case
+ * case 1: where we have duplicates value in the array 
+ *         for this we have to remove the duplicates from the array 
  */
 public class KthsmallestElement {
     public static void main(String[] args) {

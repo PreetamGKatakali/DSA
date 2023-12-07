@@ -1,3 +1,6 @@
+/**
+ * this is finding weather that subarray is in the other array or the parent array 
+ */
 public class ArrayIsSubsetOfAnotherArray {
     public static void main(String[] args) {
         int[] arr1={10, 5, 2, 23, 19};
