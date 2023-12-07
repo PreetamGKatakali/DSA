@@ -22,6 +22,23 @@ public class LargestSumContiguousSubarray {
         }
         return max_so_for;
     }
+
+    /**
+     * int[] arr={-2, -3, 4, -1, -2, 1, 5, -3};
+        int max=0;
+        for(int i=0;i<arr.length;i++){
+            int max_current=arr[i];
+            for(int j=i+1;j<arr.length;j++){
+                max_current+=arr[j];
+                if(max<max_current){
+                    max=max_current;
+                    System.out.println(i+"-->"+j);
+                }
+            }
+        }
+        System.out.println(max);
+     * 
+     */
     public static void main(String[] args) {
         int[] arr={ -2, -3, 4, -1, -2, 1, 5, -3};
         int res=maxsubarray(arr, arr.length);

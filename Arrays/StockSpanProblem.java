@@ -16,7 +16,6 @@ public class StockSpanProblem {
             res[i]=1;
             for(int j=i-1;(j>=0 && arr[i]>=arr[j]);j--){
                 res[i]++;
-
             }
         }
         return res;
