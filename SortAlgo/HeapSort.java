@@ -9,7 +9,6 @@ import java.util.Arrays;
  * left child : 2*i+1;
  * right child : 2*i+2;
  * 
- * 
  */
 public class HeapSort {
     static void sort(int[] arr,int n){
