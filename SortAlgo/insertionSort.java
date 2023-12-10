@@ -1,7 +1,9 @@
 package SortAlgo;
-
 import java.util.Arrays;
-
+/**
+ * This is program of the insertions sort 
+ * where the min element is in the frist index 
+ */
 public class insertionSort {
     public static void main(String[] args) {
         int[] arr={7,8,9,10,1,2};
