@@ -1,7 +1,5 @@
 package Stack;
 
-import java.util.Arrays;
-
 public class RainWaterTrapping {
     public static void main(String[] args) {
         int[] arr={3,0,0,2,0,4}; // o/p : 10 units of water
