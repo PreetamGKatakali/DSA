@@ -1,5 +1,7 @@
 package Stack;
 
+import java.util.Arrays;
+
 public class RainWaterTrapping {
     public static void main(String[] args) {
         int[] arr={3,0,0,2,0,4}; // o/p : 10 units of water
@@ -9,11 +11,13 @@ public class RainWaterTrapping {
         for(int i=1;i<arr.length;i++){
             MaxL[i]=Math.max(MaxL[i-1],arr[i]);
         }
+        System.out.println(Arrays.toString(MaxL));
         
         MaxR[MaxR.length-1]=arr[arr.length-1];
         for(int i=MaxR.length-2;i>=0;i--){
             MaxR[i]=Math.max(MaxR[i+1],arr[i]);
         }
+        System.out.println(Arrays.toString(MaxR));
         int sum=0;
         for(int i=0;i<arr.length;i++){
             sum+=(Math.min(MaxL[i],MaxR[i]))-arr[i];

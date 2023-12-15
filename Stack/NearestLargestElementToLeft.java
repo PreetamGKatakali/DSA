@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class NearestLargestElementToLeft {
     public static void main(String[] args) {
-        int[] arr={3,1,2,4};   // o/p :-1,-1,3,-1 
+        int[] arr={3,1,2,4};   // o/p :-1,3,3,-1 
         List<Integer> list=new ArrayList<>();
         
         Stack<Integer> st=new Stack<>();
