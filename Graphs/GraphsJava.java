@@ -61,12 +61,46 @@ public class GraphsJava {
             }
         }
     }
+    public static void DFS(ArrayList<Edge> graph[],int curr,boolean[] vis){
+        System.out.print(curr+" ");
+        vis[curr]=true;
+        for(int i=0;i<graph[curr].size();i++){
+            Edge e=graph[curr].get(i);
+            if(vis[e.des]==false){
+                DFS(graph, e.des, vis);
+            } 
+        }
+    } 
+
+    public static void allPaths(ArrayList<Edge> graphs[],boolean vis[],int curr,String path,int target){
+        if(curr==target){
+            System.out.println(path);
+            return ;
+        }
+        for(int i=0;i<graphs[curr].size();i++){
+            Edge e=graphs[curr].get(i);
+            if(!vis[e.des]){
+                vis[curr]=true;
+                allPaths(graphs, vis,e.des, path+e.des, target);
+                vis[curr]=false;
+            }
+        }
+    }
     public static void main(String[] args) {
         int V=7;
         ArrayList<Edge> graph[]=new ArrayList[V];
         createGraph(graph);
-        BFS(graph, V);
-        // //printing the neighbours 
+
+        // BFS(graph, V);
+
+        boolean[] vis=new boolean[V];
+        // DFS(graph, 0, vis);
+
+        int start=0,target=5;
+        allPaths(graph, vis, start, "0", target);
+
+
+        //printing the neighbours 
         // for(int i=0;i<graph[2].size();i++){
         //     Edge e=graph[2].get(i);
         //     System.out.println(e.des+","+e.weight);
