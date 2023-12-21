@@ -59,6 +59,15 @@ public class LL {
         }
         System.out.print("null");
     }
+
+    static void displayByHead(Node head){
+        Node curNode=head;
+        while(curNode!=null){
+            System.out.print(curNode.data+" ");
+            curNode=curNode.next;
+        }
+        System.out.print("null");
+    }
     public static void main(String[] args) {
         addfrist(10);
         addlast(20);
