@@ -1,5 +1,9 @@
 package LinkedList;
-
+/**
+ * Last but not the one 
+ * i.e-> we are removeing the last element from the linkedlist 
+ *        condistion :- so we use list.next != null
+ */
 public class LastButOne {
     public static void main(String[] args) {
         LL.addlast(10);
