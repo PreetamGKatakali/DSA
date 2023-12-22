@@ -4,14 +4,18 @@ import java.util.HashSet;
 import java.util.Set;
 /**
  * removing the duplicates elements from the linked list 
+ * this is done by using the set method where we are checking every element before adding to 
+ * the new list 
+ * 
+ * here we are creating the new list 
  */
 public class RemoveDuplicatesElement {
     public static void main(String[] args) {
         Set<Integer> s=new HashSet<>();
 
         LL.addlast(2);
-        LL.addlast(2);
         LL.addlast(4);
+        LL.addlast(2);
         LL.addlast(5);
         Node head=LL.head;    //original array 
         Node cur=head;          //cur of the original array 

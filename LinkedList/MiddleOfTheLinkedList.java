@@ -15,11 +15,12 @@ public class MiddleOfTheLinkedList {
         System.out.println("null");
     }
     public static void main(String[] args) {
-        LL.addlast(10);
-        LL.addlast(20);
-        LL.addlast(30);
-        LL.addlast(40);
-        LL.addlast(50);
+        LL.addlast(1);
+        LL.addlast(2);
+        LL.addlast(3);
+        LL.addlast(5);
+        LL.addlast(6);
+        LL.addlast(7);
 
         Node slow=LL.head;
         Node fast=LL.head;
