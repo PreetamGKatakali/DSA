@@ -12,8 +12,8 @@ package LinkedList;
 public class RemoveDuplicatesInOriginalList {
     public static void main(String[] args) {
         LL.addlast(2);
-        LL.addlast(4);
         LL.addlast(2);
+        LL.addlast(4);
         LL.addlast(5);
         Node head=LL.head;
 
@@ -27,6 +27,8 @@ public class RemoveDuplicatesInOriginalList {
                 cur=cur.next;
             }
             nextcur=nextcur.next;
+           
+            break;
             
         }
 
