@@ -7,7 +7,7 @@ import java.util.Stack;
 
 public class NearestLargestElementStack {
     public static void main(String[] args) {
-        int[] arr={1,3,2,4};
+        int[] arr={1,3,2,4};                     //o:p -> [3,4,4,-1]
         List<Integer> list=new ArrayList<>();
 
         Stack<Integer> st=new Stack<>();

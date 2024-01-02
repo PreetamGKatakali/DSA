@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 /**
- * this is of creating the graph and printing their neighbores 
- * and even the BFS 
+ * This is of creating the graph and printing their neighbores 
+ * and even the BFS and DFS 
+ * 
+ * 
  */
 class Edge{
     int src;
@@ -94,10 +96,10 @@ public class GraphsJava {
         // BFS(graph, V);
 
         boolean[] vis=new boolean[V];
-        // DFS(graph, 0, vis);
+        DFS(graph, 0, vis);
 
-        int start=0,target=5;
-        allPaths(graph, vis, start, "0", target);
+        // int start=0,target=5;
+        // allPaths(graph, vis, start, "0", target);
 
 
         //printing the neighbours 

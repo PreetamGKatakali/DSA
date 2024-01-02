@@ -21,6 +21,7 @@ public class MiddleOfTheLinkedList {
         LL.addlast(5);
         LL.addlast(6);
         LL.addlast(7);
+       
 
         Node slow=LL.head;
         Node fast=LL.head;

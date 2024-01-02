@@ -1,6 +1,16 @@
 package LinkedList;
 /**
  * swaping the two number in the linked list 
+ * Algo 
+ *  Step 1 : point=dummy
+ *  Step 2: while (point.next!=null && point.next.next!=null){
+ *          Node swap1=point.next;
+ *          Node swap2=point.next.next;
+ *          }
+ *  Step 3 : swap1.next=swap2.next;
+ *           swap2.next=swap1;
+ *  Step 4 : point.next=swap2;
+ *           point=swap1;
  */
 public class SwapNodes {
     public static void main(String[] args) {
