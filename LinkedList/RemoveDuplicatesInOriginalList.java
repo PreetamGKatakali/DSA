@@ -26,10 +26,7 @@ public class RemoveDuplicatesInOriginalList {
             else{
                 cur=cur.next;
             }
-            nextcur=nextcur.next;
-           
-            break;
-            
+            nextcur=nextcur.next; 
         }
 
         LL.displayByHead(head);
