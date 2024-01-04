@@ -1,5 +1,9 @@
 package SearchAlgo;
-
+/**
+ * Linear Search Algo we have to search one by one element 
+ * the time complexcity is in some case O(1)
+ * worest case : O(n)
+ */
 public class LinearSearch {
     static int search(int[] arr,int x){
         for(int i=0;i<arr.length;i++){
