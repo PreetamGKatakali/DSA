@@ -1,6 +1,6 @@
 package SearchAlgo;
 /**
- * BinarySearch Algo 
+ * BinarySearch Algo : 
  * to reduce the time complexcity of the liner search O(n)
  */
 public class BinarySearch {
